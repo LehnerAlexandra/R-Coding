@@ -206,8 +206,14 @@ Track as many error messages as possible that you made during this week (stop on
 "4" - "3"
 # -> Error in "4" - "3" : non-numeric argument to binary operator
 
-# Your examples below
+# Your examples below:
+# Knit to .html --> I did not take attention of R Markdown so the formatting of my answers was looking really odd. I checked the mistaked online and added the respective formating with the special sign "***".
+
+# Knot to .pdf --> Error Message: Error: Failed to compile lecture1-slides.tex. See https://yihui.name/tinytex/r/#debugging for debugging tips. In addition: Warning message: In system2(…, stdout = if (use_file_stdout()) f1 else FALSE, stderr = f2) : ‘“xelatex”’ not found Execution halted No LaTeX installation detected (LaTeX is required to create PDF output). You should install a LaTeX distribution for your platform: https://www.latex-project.org/get/ If you are not sure, you may install TinyTeX in R: tinytex::install_tinytex() Otherwise consider MiKTeX on Windows - http://miktex.org MacTeX on macOS - https://tug.org/mactex/ (NOTE: Download with Safari rather than Chrome strongly recommended) Linux: Use system package manager
+
+# I renamed the folder of R-Coding, so I was not able to push back to git. I solved it by adding the the git repository once again.
 ```
+
 
 Post one of these 4 errors on discourse.
 
