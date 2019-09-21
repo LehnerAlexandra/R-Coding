@@ -2,7 +2,9 @@
 title: "Lecture 1"
 author: "Marc Kaufmann"
 date: "9/10/2019"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -43,16 +45,26 @@ Everything that you use in R has a name: variables (including datasets), functio
 **Exercise:** For each of the lines in the following code chunk, write in a comment next to it what it returns. I completed the first example for you.
 
 ```{r, exercise1, eval=FALSE}
+Solution, Lehner,A.:
 3         # -> 3
-7 %% 3    # -> ?
-False     # -> ?
-'pi'      # -> ?
-FALSE     # -> ?
+7 %% 3    # -> 1
+False     # -> Error
+'pi'      # -> "pi"
+FALSE     # -> FALSE
 ```
 
 **Exercise:** Look up what 'snake case' is and add your answer here.
 
+**Solution, Lehner,A.:**
+# In programming, we often remove the spaces between words because programs of different sorts reserve the space (‘ ’) character for special purposes. Because the space character is reserved, we cannot use it to represent a concept that we express in our human language with multiple words.Snake case combines words by replacing each space with an underscore (_) and, in the all caps version, all letters are capitalized.
+
 **Exercise:** What types of names are allowed in R? Look it up and write your answer here as you understand it. Then provide 3 examples of things that are not valid names in R for different reasons. 
+
+**Solution, Lehner,A.:**
+# Most programming languages have official naming conventions. This is not the case with R. There exist many different naming conventions. The main difference between the conventions is in how names consisting of multiple words are written. Naming convetions: alllowercase, period.separated, underscore_separated, lowerCamelCase, UpperCamelCase, snake_case
+# A valid variable name consists of letters, numbers and the dot or underline characters. The variable name starts with a letter or the dot not followed by a number. Or if words are reserved in R.
+# Not valid names in R: "Last Name", ".3quotes", "while"
+
 
 #### Everything is an object
 
@@ -105,12 +117,15 @@ A function is a special object that you can call, such as the function $mean$. I
 mean
 ```
 
-When we *call* it, we put parentheses at the end, and we tell it what to perform its action on:
+When we *call* it, we put parentheses at the end, and we tell it what to 
 
 ```{r mean_means}
 ```
 
 **Exercise:** What happens if you call the function $mean$ without any arguments, i.e. $mean()$?
+
+**Solution, Lehner,A.:**
+#The function needs an argument "x". I received an error because I did not enter any argument in the brackets: Error in mean.default() : argument "x" is missing, with no default
 
 #### Functions come in packages
 
@@ -143,6 +158,11 @@ For built-in functions, you can also ask for help or bring up the documentation 
 
 **Exercise:** What do 'class()' and 'str()' do? Use 'help' (or '?'). Don't spend too much time reading the docs. Which description do you find more helpful?
 
+**Solution, Lehner,A.:**
+# class(): A class defines a type of object, describing what properties it possesses, how it behaves, and how it relates to other types of objects. If the object does not have a class attribute, it has an implicit class, notably "matrix", "array", "function" or "numeric".
+# str(): Compactly display the internal structure of an R object, a diagnostic function and an alternative to summary(). Main structures: atomic vector, list, matrix, data frame, factors
+# I think class(), even though it seems to be the easier function, would be more useful for me as it returns quite easy outputs which could be easily used in code (e.g. return of TRUE in a while function).
+
 ### Make Your First Figure
 
 ```{r, gapminder}
@@ -165,7 +185,7 @@ Read chapter 2 of [Data Visualization](http://socviz.co/gettingstarted.html). Ma
 
 ### Part 2
 
-Complete all the exercises in the lectures notes of lecture 1. Put your answer to an exercise right after the question of the exrcise in the R Markdown file. When done, knit the document, commit the changes with the commit message "Part 1 of assignment 2" and push them to your GitHub repository.
+Complete all the exercises in the lectures notes of lecture 1. Put your answer to an exercise right after the question of the exercise in the R Markdown file. When done, knit the document, commit the changes with the commit message "Part 1 of assignment 2" and push them to your GitHub repository.
 
 ### Part 3
 
@@ -201,4 +221,7 @@ Try fo figure out two of the following and post your answers on Discourse for ot
 - What is the Tidyverse?
 - Who is Hadley Wickham?
 
-## Resources for this lecture 
+## Resources for this lecture
+
+git add lecture1-to-fill-in.Rmd
+
